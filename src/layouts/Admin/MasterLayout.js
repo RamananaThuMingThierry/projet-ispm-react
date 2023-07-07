@@ -22,6 +22,7 @@ class MasterLayout extends Component{
                 <main>
                   <Switch>
                     <Route exact path="/admin/dashboard" component={Dashboard} />
+                    
                     <Route component={ErrorPage}/>
                   </Switch>
                 </main>
