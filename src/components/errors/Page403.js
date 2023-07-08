@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Page403 = () =>{
     return (
-        <div className="container">
-            <div className="row justify-content-center">
-                <div className="col-md-6">
-                    <div className="mt-5">
-                        <h1>Page 403 | Forbidden</h1>
-                        <h3>Access Denied. !As you are not an Admin.</h3>
-                    </div>
-                </div>
+        <div class="d-flex align-items-center justify-content-center vh-100">
+            <div class="text-center">
+                <h1 class="display-1 fw-bold text-success">404</h1>
+                <p class="fs-3"> <span class="text-danger">Opps!</span> Page interdit.</p>
+                <p class="lead text-muted">
+                    Accès refusé! comme vous n'êtes pas administrateur.
+                </p>
+                <Link to="" class="btn btn-success">Retour</Link>
             </div>
         </div>
     );

@@ -1,11 +1,11 @@
 import React from "react";
 
-const ViewFilieres = () =>{
+const ViewHistoriques = () =>{
     return (
         <div className="container-fluid bg-white elevation-1 pb-2 pt-2">
-            <h1>ViewFilieres</h1>
+            <h1>View Historiques</h1>
         </div>
     );
 }
 
-export default ViewFilieres;
+export default ViewHistoriques;

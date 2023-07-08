@@ -18,11 +18,9 @@ const AdminPrivateRoute = ({...rest}) =>{
             }
             setLoading(false);
         });
-
         return () =>{
             setAuthenticated(false);
         };
-
     }, []);
 
 
@@ -40,11 +38,11 @@ const AdminPrivateRoute = ({...rest}) =>{
         
         if(error.response.status === 403) // Access Denied
         {
-            swal("Forbidden", error.response.data.message, "warning");
+            swal("Interdit", error.response.data.message, "warning");
             history.push("/403");
         }else if(error.response.status === 404) // Page not found
         {
-            swal("404 Error", "Url/Page Not Found", "warning");
+            swal("404", "Url / Page non trouvée", "warning");
             history.push("/404");
         }
         return Promise.reject(error);

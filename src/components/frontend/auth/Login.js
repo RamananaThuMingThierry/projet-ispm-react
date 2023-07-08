@@ -77,7 +77,7 @@ const Login = () => {
                                     </div>
                                         {/* <div className="form-check mb-3">
                                             <input className="form-check-input" id="inputRememberPassword" type="checkbox" value="" />
-                                            <label className="form-check-label" for="inputRememberPassword">Remember Password</label>
+                                            <label className="form-check-label" for="inputRememberPassword">Me rappeler</label>
                                         </div> */}
                                         <div className="d-flex align-items-center justify-content-between mt-4 mb-0">
                                             <a className="small" href="password.html">Mot de passe oublier?</a>
