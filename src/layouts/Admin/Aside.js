@@ -7,20 +7,28 @@ const Aside = () =>{
       <div className="sb-sidenav-menu">
           <div className="nav">
               <div className="sb-sidenav-menu-heading">Core</div>
-              <Link className="nav-link" to="index.html">
+              <Link className="nav-link" to="/admin/dashboard">
                   <div className="sb-nav-link-icon"><i className="fas fa-tachometer-alt"></i></div>
-                  Dashboard
+                  Accueil
               </Link>
 
               <div className="sb-sidenav-menu-heading">Interface</div>
               
+              {/* Classes */}
               <Link className="nav-link" to="/admin/classes">
                   <div className="sb-nav-link-icon"><i className="fas fa-columns"></i></div>
                   Classes
                   <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-right"></i></div>
               </Link>
-         
-              
+                
+              {/* Département */}
+              <Link className="nav-link" to="/admin/departement">
+                  <div className="sb-nav-link-icon"><i className="fas fa-columns"></i></div>
+                  Département
+                  <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-right"></i></div>
+              </Link>
+
+              {/* Filières */}
               <Link className="nav-link" to="/admin/filieres">
                   <div className="sb-nav-link-icon"><i className="fas fa-columns"></i></div>
                   Filières
@@ -31,6 +39,13 @@ const Aside = () =>{
               <Link className="nav-link" to="/admin/etudiants">
                   <div className="sb-nav-link-icon"><i className="fas fa-columns"></i></div>
                   Etudiants
+                  <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-right"></i></div>
+              </Link>
+      
+              {/* Historiques */}
+              <Link className="nav-link" to="/admin/historiques">
+                  <div className="sb-nav-link-icon"><i className="fas fa-columns"></i></div>
+                  Historiques
                   <div className="sb-sidenav-collapse-arrow"><i className="fas fa-angle-right"></i></div>
               </Link>
 

@@ -8,23 +8,19 @@ const Users = () =>{
     const [usersList, setUsersList] = useState([]);
 
     useEffect(() =>{
-
         axios.get(`api/users`).then(res =>{
             if(res.data.status === 200){
                 setUsersList(res.data.users);   
             }
-             setLoading(false);
+            setLoading(false);
          });
-
      },[]);
 
     if(loading){
         return (
-            <div className="container">
-                <div className="d-align-items-center justify-content-center wh-100">
-                    <div className="text-center">
-                        <h1>Vueillez patientez...</h1>
-                    </div>
+            <div className="d-flex align-items-center justify-content-center mt-5">
+                <div className="text-center">
+                    <h1 className="text-success">Veuillez patientez...</h1>
                 </div>
             </div>
         );

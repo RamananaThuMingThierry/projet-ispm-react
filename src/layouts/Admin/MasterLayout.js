@@ -27,6 +27,10 @@ import Users from "../../components/backend/Utilisateurs/Users";
 import AddUsers from "../../components/backend/Utilisateurs/AddUsers";
 import ViewUsers from "../../components/backend/Utilisateurs/ViewUsers";
 import EditUsers from "../../components/backend/Utilisateurs/EditUsers";
+import Departement from "../../components/backend/Departement/Departement";
+import AddDepartement from "../../components/backend/Departement/AddDepartement";
+import ViewDepartement from "../../components/backend/Departement/ViewDepartement";
+import EditDepartement from "../../components/backend/Departement/EditDepartement";
 class MasterLayout extends Component{
   render(){
     return (
@@ -38,44 +42,53 @@ class MasterLayout extends Component{
             </div>
             <div id="layoutSidenav_content">
                 <main>
-                  <Switch>
-                    <Route exact path="/admin/dashboard" component={Dashboard} />
-                    {/* Classes */}
-                    <Route exact path="/admin/classes" component={Classes} />
-                    <Route exact path="/admin/add-classes" component={AddClasses} />
-                    <Route exact path="/admin/view-classes/:id" component={ViewClasses} />
-                    <Route exact path="/admin/edit-classes/:id" component={EditClasses} />
+                  <div className="container-fluid">
+                    <Switch>
+                      <Route exact path="/admin/dashboard" component={Dashboard} />
+                      {/* Classes */}
+                      <Route exact path="/admin/classes" component={Classes} />
+                      <Route exact path="/admin/add-classes" component={AddClasses} />
+                      <Route exact path="/admin/view-classes/:id" component={ViewClasses} />
+                      <Route exact path="/admin/edit-classes/:id" component={EditClasses} />
 
-                    {/* Filières */}
-                    <Route exact path="/admin/filieres" component={Filieres} />
-                    <Route exact path="/admin/add-filieres" component={AddFilieres} />
-                    <Route exact path="/admin/view-filieres/:id" component={ViewFilieres} />
-                    <Route exact path="/admin/edit-filieres/:id" component={EditFilieres} />
 
-                    {/* Etudiants */}
-                    <Route exact path="/admin/etudiants" component={Etudiants} />
-                    <Route exact path="/admin/add-etudiants" component={AddEtudiants} />
-                    <Route exact path="/admin/view-etudiants/:id" component={ViewEtudiants} />
-                    <Route exact path="/admin/edit-etudiants/:id" component={EditEtudiants} />
+                      {/* Départements */}
+                      <Route exact path="/admin/departement" component={Departement} />
+                      <Route exact path="/admin/add-departement" component={AddDepartement} />
+                      <Route exact path="/admin/view-departement/:id" component={ViewDepartement} />
+                      <Route exact path="/admin/edit-departement/:id" component={EditDepartement} />
 
-                    {/* Historiques */}
-                    <Route exact path="/admin/historiques" component={Historiques} />
-                    <Route exact path="/admin/add-historiques" component={AddHistoriques} />
-                    <Route exact path="/admin/view-historiques/:id" component={ViewHistoriques} />
-                    <Route exact path="/admin/edit-historiques/:id" component={EditHistoriques} />
+                      {/* Filières */}
+                      <Route exact path="/admin/filieres" component={Filieres} />
+                      <Route exact path="/admin/add-filieres" component={AddFilieres} />
+                      <Route exact path="/admin/view-filieres/:id" component={ViewFilieres} />
+                      <Route exact path="/admin/edit-filieres/:id" component={EditFilieres} />
 
-                    {/* Utilisateurs */}
-                    <Route exact path="/admin/users" component={Users} />
-                    <Route exact path="/admin/add-users" component={AddUsers} />
-                    <Route exact path="/admin/view-users/:id" component={ViewUsers} />
-                    <Route exact path="/admin/edit-users/:id" component={EditUsers} />
+                      {/* Etudiants */}
+                      <Route exact path="/admin/etudiants" component={Etudiants} />
+                      <Route exact path="/admin/add-etudiants" component={AddEtudiants} />
+                      <Route exact path="/admin/view-etudiants/:id" component={ViewEtudiants} />
+                      <Route exact path="/admin/edit-etudiants/:id" component={EditEtudiants} />
 
-                    {/* Page d'erreur */}
-                    <Route component={ErrorPage}/>
-                  </Switch>
+                      {/* Historiques */}
+                      <Route exact path="/admin/historiques" component={Historiques} />
+                      <Route exact path="/admin/add-historiques" component={AddHistoriques} />
+                      <Route exact path="/admin/view-historiques/:id" component={ViewHistoriques} />
+                      <Route exact path="/admin/edit-historiques/:id" component={EditHistoriques} />
+
+                      {/* Utilisateurs */}
+                      <Route exact path="/admin/users" component={Users} />
+                      <Route exact path="/admin/add-users" component={AddUsers} />
+                      <Route exact path="/admin/view-users/:id" component={ViewUsers} />
+                      <Route exact path="/admin/edit-users/:id" component={EditUsers} />
+
+                      {/* Page d'erreur */}
+                      <Route component={ErrorPage}/>
+                    </Switch>
+                  </div>
                 </main>
+                <Footer/>
              </div>
-             <Footer/>
           </div>
       </div>
     );

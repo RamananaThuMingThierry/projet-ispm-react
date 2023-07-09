@@ -21,7 +21,7 @@ const Navbar = () =>{
 
     return (
     <nav className="sb-topnav navbar navbar-expand navbar-dark bg-success">
-            <Link className="navbar-brand ps-3" to="/admin/dashboard"><img src={`https://locahost:8000/logo/logo.jpg`}/>Dashboard ISPM</Link>
+            <Link className="navbar-brand ps-3" to="/admin/dashboard">Dashboard ISPM</Link>
             <button className="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle"><i className="fas fa-bars"></i></button>
             <ul className="navbar-nav d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <li className="nav-item dropdown">
